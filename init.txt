@@ -1,63 +1,12 @@
+----- Strucid Detector -----
+
 if game.PlaceId == 2377868063 then
   game.Players.LocalPlayer:Kick("You have been kicked because of ban risks. (Detected by SpeedSterKawaii's Detector)")
   else
   wait(0.30)
 end
 
---[[
-
- JSON Encoder and Parser for Lua 5.1
- 
- Copyright © 2007 Shaun Brown (http://www.chipmunkav.com).
- All Rights Reserved.
- 
- Permission is hereby granted, free of charge, to any person 
- obtaining a copy of this software to deal in the Software without 
- restriction, including without limitation the rights to use, 
- copy, modify, merge, publish, distribute, sublicense, and/or 
- sell copies of the Software, and to permit persons to whom the 
- Software is furnished to do so, subject to the following conditions:
-
- The above copyright notice and this permission notice shall be 
- included in all copies or substantial portions of the Software.
- If you find this software useful please give www.chipmunkav.com a mention.
-
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
- OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR 
- ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
- CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
- CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
- Usage:
-
- -- Lua script:
- local t = { 
-	["name1"] = "value1",
-	["name2"] = {1, false, true, 23.54, "a \021 string"},
-	name3 = Json.Null() 
- }
-
- local json = Json.Encode (t)
- print (json) 
- --> {"name1":"value1","name3":null,"name2":[1,false,true,23.54,"a \u0015 string"]}
-
- local t = Json.Decode(json)
- print(t.name2[4])
- --> 23.54
- 
- Notes:
- 1) Encodable Lua types: string, number, boolean, table, nil
- 2) Use Json.Null() to insert a null value into a Json object
- 3) All control chars are encoded to \uXXXX format eg "\021" encodes to "\u0015"
- 4) All Json \uXXXX chars are decoded to chars (0-255 byte range only)
- 5) Json single line // and /* */ block comments are discarded during decoding
- 6) Numerically indexed Lua arrays are encoded to Json Lists eg [1,2,3]
- 7) Lua dictionary tables are converted to Json objects eg {"one":1,"two":2}
- 8) Json nulls are decoded to Lua nil and treated by Lua in the normal way
-
---]]
+----- Json Parser -----
 
 local string = string
 local math = math
@@ -519,8 +468,10 @@ function Null()
 	return Null
 end
 
+----- Watermark hehe -----
+
 game.StarterGui:SetCore('SendNotification', {
-Title = 'M-Ware';
+Title = 'Cloud U';
 Text = 'Made by S1nister and SpeedSterKawaii <3';
 Icon = 'rbxassetid://57254792';
 Duration = 6;
