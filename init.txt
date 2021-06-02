@@ -8,6 +8,8 @@ end
 
 ----- Json Parser -----
 
+local t = {}
+
 local string = string
 local math = math
 local table = table
