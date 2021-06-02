@@ -3,7 +3,7 @@
 if game.PlaceId == 2377868063 then
   game.Players.LocalPlayer:Kick("You have been kicked because of ban risks. (Detected by SpeedSterKawaii's Detector)")
   else
-  return nil;
+  wait(0.1)
 end
 
 ----- Json Parser -----
