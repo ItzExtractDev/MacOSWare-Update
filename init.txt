@@ -518,3 +518,10 @@ end
 function Null()
 	return Null
 end
+
+game.StarterGui:SetCore('SendNotification', {
+Title = 'M-Ware';
+Text = 'Made by S1nister and SpeedSterKawaii <3';
+Icon = 'rbxassetid://57254792';
+Duration = 6;
+	});
