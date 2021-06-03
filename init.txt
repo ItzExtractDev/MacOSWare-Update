@@ -6,6 +6,8 @@ if game.PlaceId == 2377868063 then
   wait(0.1)
 end
 
+----- End Strucid Detector -----
+
 ----- Watermark hehe -----
 
 game.StarterGui:SetCore('SendNotification', {
@@ -14,3 +16,5 @@ Text = 'Made by S1nister and SpeedSterKawaii <3';
 Icon = 'rbxassetid://57254792';
 Duration = 6;
 	});
+
+----- End Watermark -----
