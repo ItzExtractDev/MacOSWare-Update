@@ -9,7 +9,7 @@ end
 ----- Watermark hehe -----
 
 game.StarterGui:SetCore('SendNotification', {
-Title = 'Cloud U';
+Title = 'M-Ware';
 Text = 'Made by S1nister and SpeedSterKawaii <3';
 Icon = 'rbxassetid://57254792';
 Duration = 6;
